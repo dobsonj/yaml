@@ -1,0 +1,300 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim1
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim2
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim3
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim4
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim5
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim6
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim7
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim8
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim9
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim10
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim11
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim12
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim13
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim14
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim15
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim16
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim17
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim18
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim19
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim20
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim21
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim22
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim23
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim24
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: csi-claim25
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 1Gi
+---

@@ -1,0 +1,144 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ubuntu-aws-inline
+  labels:
+    app: ubuntu
+spec:
+  volumes:
+  - name: inline-claim1-vol
+    persistentVolumeClaim:
+      claimName: inline-claim1
+  - name: inline-claim2-vol
+    persistentVolumeClaim:
+      claimName: inline-claim2
+  - name: inline-claim3-vol
+    persistentVolumeClaim:
+      claimName: inline-claim3
+  - name: inline-claim4-vol
+    persistentVolumeClaim:
+      claimName: inline-claim4
+  - name: inline-claim5-vol
+    persistentVolumeClaim:
+      claimName: inline-claim5
+  - name: inline-claim6-vol
+    persistentVolumeClaim:
+      claimName: inline-claim6
+  - name: inline-claim7-vol
+    persistentVolumeClaim:
+      claimName: inline-claim7
+  - name: inline-claim8-vol
+    persistentVolumeClaim:
+      claimName: inline-claim8
+  - name: inline-claim9-vol
+    persistentVolumeClaim:
+      claimName: inline-claim9
+  - name: inline-claim10-vol
+    persistentVolumeClaim:
+      claimName: inline-claim10
+  - name: inline-claim11-vol
+    persistentVolumeClaim:
+      claimName: inline-claim11
+  - name: inline-claim12-vol
+    persistentVolumeClaim:
+      claimName: inline-claim12
+  - name: inline-claim13-vol
+    persistentVolumeClaim:
+      claimName: inline-claim13
+  - name: inline-claim14-vol
+    persistentVolumeClaim:
+      claimName: inline-claim14
+  - name: inline-claim15-vol
+    persistentVolumeClaim:
+      claimName: inline-claim15
+  - name: inline-claim16-vol
+    persistentVolumeClaim:
+      claimName: inline-claim16
+  - name: inline-claim17-vol
+    persistentVolumeClaim:
+      claimName: inline-claim17
+  - name: inline-claim18-vol
+    persistentVolumeClaim:
+      claimName: inline-claim18
+  - name: inline-claim19-vol
+    persistentVolumeClaim:
+      claimName: inline-claim19
+  - name: inline-claim20-vol
+    persistentVolumeClaim:
+      claimName: inline-claim20
+  - name: inline-claim21-vol
+    persistentVolumeClaim:
+      claimName: inline-claim21
+  - name: inline-claim22-vol
+    persistentVolumeClaim:
+      claimName: inline-claim22
+  - name: inline-claim23-vol
+    persistentVolumeClaim:
+      claimName: inline-claim23
+  - name: inline-claim24-vol
+    persistentVolumeClaim:
+      claimName: inline-claim24
+  - name: inline-claim25-vol
+    persistentVolumeClaim:
+      claimName: inline-claim25
+  containers:
+  - image: ubuntu
+    command:
+      - "sleep"
+      - "604800"
+    imagePullPolicy: IfNotPresent
+    name: ubuntu
+    volumeMounts:
+      - mountPath: "/mnt/inline-claim1"
+        name: inline-claim1-vol
+      - mountPath: "/mnt/inline-claim2"
+        name: inline-claim2-vol
+      - mountPath: "/mnt/inline-claim3"
+        name: inline-claim3-vol
+      - mountPath: "/mnt/inline-claim4"
+        name: inline-claim4-vol
+      - mountPath: "/mnt/inline-claim5"
+        name: inline-claim5-vol
+      - mountPath: "/mnt/inline-claim6"
+        name: inline-claim6-vol
+      - mountPath: "/mnt/inline-claim7"
+        name: inline-claim7-vol
+      - mountPath: "/mnt/inline-claim8"
+        name: inline-claim8-vol
+      - mountPath: "/mnt/inline-claim9"
+        name: inline-claim9-vol
+      - mountPath: "/mnt/inline-claim10"
+        name: inline-claim10-vol
+      - mountPath: "/mnt/inline-claim11"
+        name: inline-claim11-vol
+      - mountPath: "/mnt/inline-claim12"
+        name: inline-claim12-vol
+      - mountPath: "/mnt/inline-claim13"
+        name: inline-claim13-vol
+      - mountPath: "/mnt/inline-claim14"
+        name: inline-claim14-vol
+      - mountPath: "/mnt/inline-claim15"
+        name: inline-claim15-vol
+      - mountPath: "/mnt/inline-claim16"
+        name: inline-claim16-vol
+      - mountPath: "/mnt/inline-claim17"
+        name: inline-claim17-vol
+      - mountPath: "/mnt/inline-claim18"
+        name: inline-claim18-vol
+      - mountPath: "/mnt/inline-claim19"
+        name: inline-claim19-vol
+      - mountPath: "/mnt/inline-claim20"
+        name: inline-claim20-vol
+      - mountPath: "/mnt/inline-claim21"
+        name: inline-claim21-vol
+      - mountPath: "/mnt/inline-claim22"
+        name: inline-claim22-vol
+      - mountPath: "/mnt/inline-claim23"
+        name: inline-claim23-vol
+      - mountPath: "/mnt/inline-claim24"
+        name: inline-claim24-vol
+      - mountPath: "/mnt/inline-claim25"
+        name: inline-claim25-vol
+  restartPolicy: Always
+  nodeSelector:
+    testnode: "yes"

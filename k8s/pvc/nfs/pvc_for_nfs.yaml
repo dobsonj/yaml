@@ -1,0 +1,11 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: pvc-for-nfs
+spec:
+  accessModes:
+  - ReadWriteOnce
+  storageClassName: gp2-csi
+  resources:
+    requests:
+      storage: 100Gi

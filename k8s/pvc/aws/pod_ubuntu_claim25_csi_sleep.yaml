@@ -1,0 +1,144 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ubuntu-aws-csi
+  labels:
+    app: ubuntu
+spec:
+  volumes:
+  - name: csi-claim1-vol
+    persistentVolumeClaim:
+      claimName: csi-claim1
+  - name: csi-claim2-vol
+    persistentVolumeClaim:
+      claimName: csi-claim2
+  - name: csi-claim3-vol
+    persistentVolumeClaim:
+      claimName: csi-claim3
+  - name: csi-claim4-vol
+    persistentVolumeClaim:
+      claimName: csi-claim4
+  - name: csi-claim5-vol
+    persistentVolumeClaim:
+      claimName: csi-claim5
+  - name: csi-claim6-vol
+    persistentVolumeClaim:
+      claimName: csi-claim6
+  - name: csi-claim7-vol
+    persistentVolumeClaim:
+      claimName: csi-claim7
+  - name: csi-claim8-vol
+    persistentVolumeClaim:
+      claimName: csi-claim8
+  - name: csi-claim9-vol
+    persistentVolumeClaim:
+      claimName: csi-claim9
+  - name: csi-claim10-vol
+    persistentVolumeClaim:
+      claimName: csi-claim10
+  - name: csi-claim11-vol
+    persistentVolumeClaim:
+      claimName: csi-claim11
+  - name: csi-claim12-vol
+    persistentVolumeClaim:
+      claimName: csi-claim12
+  - name: csi-claim13-vol
+    persistentVolumeClaim:
+      claimName: csi-claim13
+  - name: csi-claim14-vol
+    persistentVolumeClaim:
+      claimName: csi-claim14
+  - name: csi-claim15-vol
+    persistentVolumeClaim:
+      claimName: csi-claim15
+  - name: csi-claim16-vol
+    persistentVolumeClaim:
+      claimName: csi-claim16
+  - name: csi-claim17-vol
+    persistentVolumeClaim:
+      claimName: csi-claim17
+  - name: csi-claim18-vol
+    persistentVolumeClaim:
+      claimName: csi-claim18
+  - name: csi-claim19-vol
+    persistentVolumeClaim:
+      claimName: csi-claim19
+  - name: csi-claim20-vol
+    persistentVolumeClaim:
+      claimName: csi-claim20
+  - name: csi-claim21-vol
+    persistentVolumeClaim:
+      claimName: csi-claim21
+  - name: csi-claim22-vol
+    persistentVolumeClaim:
+      claimName: csi-claim22
+  - name: csi-claim23-vol
+    persistentVolumeClaim:
+      claimName: csi-claim23
+  - name: csi-claim24-vol
+    persistentVolumeClaim:
+      claimName: csi-claim24
+  - name: csi-claim25-vol
+    persistentVolumeClaim:
+      claimName: csi-claim25
+  containers:
+  - image: ubuntu
+    command:
+      - "sleep"
+      - "604800"
+    imagePullPolicy: IfNotPresent
+    name: ubuntu
+    volumeMounts:
+      - mountPath: "/mnt/csi-claim1"
+        name: csi-claim1-vol
+      - mountPath: "/mnt/csi-claim2"
+        name: csi-claim2-vol
+      - mountPath: "/mnt/csi-claim3"
+        name: csi-claim3-vol
+      - mountPath: "/mnt/csi-claim4"
+        name: csi-claim4-vol
+      - mountPath: "/mnt/csi-claim5"
+        name: csi-claim5-vol
+      - mountPath: "/mnt/csi-claim6"
+        name: csi-claim6-vol
+      - mountPath: "/mnt/csi-claim7"
+        name: csi-claim7-vol
+      - mountPath: "/mnt/csi-claim8"
+        name: csi-claim8-vol
+      - mountPath: "/mnt/csi-claim9"
+        name: csi-claim9-vol
+      - mountPath: "/mnt/csi-claim10"
+        name: csi-claim10-vol
+      - mountPath: "/mnt/csi-claim11"
+        name: csi-claim11-vol
+      - mountPath: "/mnt/csi-claim12"
+        name: csi-claim12-vol
+      - mountPath: "/mnt/csi-claim13"
+        name: csi-claim13-vol
+      - mountPath: "/mnt/csi-claim14"
+        name: csi-claim14-vol
+      - mountPath: "/mnt/csi-claim15"
+        name: csi-claim15-vol
+      - mountPath: "/mnt/csi-claim16"
+        name: csi-claim16-vol
+      - mountPath: "/mnt/csi-claim17"
+        name: csi-claim17-vol
+      - mountPath: "/mnt/csi-claim18"
+        name: csi-claim18-vol
+      - mountPath: "/mnt/csi-claim19"
+        name: csi-claim19-vol
+      - mountPath: "/mnt/csi-claim20"
+        name: csi-claim20-vol
+      - mountPath: "/mnt/csi-claim21"
+        name: csi-claim21-vol
+      - mountPath: "/mnt/csi-claim22"
+        name: csi-claim22-vol
+      - mountPath: "/mnt/csi-claim23"
+        name: csi-claim23-vol
+      - mountPath: "/mnt/csi-claim24"
+        name: csi-claim24-vol
+      - mountPath: "/mnt/csi-claim25"
+        name: csi-claim25-vol
+  restartPolicy: Always
+  nodeSelector:
+    testnode: "yes"
